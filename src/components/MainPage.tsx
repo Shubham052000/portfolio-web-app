@@ -16,11 +16,13 @@ const MainPage = () => {
             designing) exceptional digital experiences. Currently, I'm focused
             on building front-end ReactJS applications with{" "}
             <a
-              className="text-teal-300 hover:underline underline-offset-4"
+              className="group text-teal-300 transition-all duration-300 ease-in-out"
               href="https://dxc.com/us/en/"
               target="_blank"
             >
-              DXC Technology
+              <span className="bg-left-bottom bg-gradient-to-r from-teal-300 to-teal-300 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-300 ease-out">
+                DXC Technology
+              </span>
             </a>
             .
           </p>

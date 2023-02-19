@@ -1,9 +1,7 @@
-import React from "react";
-
 const AboutMe = () => {
   return (
     <section id="about" className="text-lg">
-      <h2 className="text-2xl font-semibold mb-10 flex flex-row underline underline-offset-4">
+      <h2 className="text-2xl text-slate-300 font-semibold mb-10 flex flex-row underline underline-offset-4">
         <span>01. &nbsp;</span> About Me
       </h2>
       <p className="mb-5">

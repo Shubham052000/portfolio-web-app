@@ -4,7 +4,7 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainPage from "./components/MainPage";
-import Work from "./components/Work";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <div className="lg:w-3/5 mx-auto">
             <AboutMe />
             <Experience />
-            <Work />
+            <Projects />
             <Contact />
           </div>
         </div>
