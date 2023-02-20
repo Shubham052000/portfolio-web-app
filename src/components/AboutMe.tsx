@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <section id="about" className="text-lg">
-      <h2 className="text-2xl text-slate-300 font-semibold mb-10 flex flex-row underline underline-offset-4">
+      <h2 className="text-2xl text-primary font-semibold mb-10 flex flex-row underline underline-offset-4">
         <span>01. &nbsp;</span> About Me
       </h2>
       <p className="mb-5">
@@ -24,7 +24,7 @@ const AboutMe = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5 text-teal-300"
+            className="w-5 h-5 text-accented-high"
           >
             <path
               strokeLinecap="round"
@@ -42,7 +42,7 @@ const AboutMe = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5 text-teal-300"
+            className="w-5 h-5 text-accented-high"
           >
             <path
               strokeLinecap="round"
@@ -60,7 +60,7 @@ const AboutMe = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5 text-teal-300"
+            className="w-5 h-5 text-accented-high"
           >
             <path
               strokeLinecap="round"
@@ -78,7 +78,7 @@ const AboutMe = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5 text-teal-300"
+            className="w-5 h-5 text-accented-high"
           >
             <path
               strokeLinecap="round"
@@ -96,7 +96,7 @@ const AboutMe = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-5 h-5 text-teal-300"
+            className="w-5 h-5 text-accented-high"
           >
             <path
               strokeLinecap="round"
