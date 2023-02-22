@@ -12,9 +12,9 @@ const MainPage = () => {
           <h3 className="text-7xl font-bold mb-5">I'm a Frontend developer.</h3>
 
           <p className="text-lg w-4/5 lg:w-1/2">
-            I'm a software engineer specializing in building (and occassionaly
-            designing) exceptional digital experiences. Currently, I'm focused
-            on building front-end ReactJS applications with{" "}
+            I'm a software engineer specializing in building and designing
+            exceptional frontend experiences using ReactJS. Currently, I'm
+            focused on building front-end ReactJS applications with{" "}
             <a
               className="group text-accented-high transition-all duration-300 ease-in-out"
               href="https://dxc.com/us/en/"

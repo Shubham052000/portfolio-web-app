@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="text-center mt-30">
+    <footer className="text-center mt-30 pb-16">
       <p className="text-md">
         Built by{" "}
         <span className="font-semibold underline underline-offset-4 text-accented-high">

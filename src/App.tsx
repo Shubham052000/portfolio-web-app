@@ -9,11 +9,11 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div className="p-6 bg-background text-primary">
+      <div className=" bg-background text-primary">
         <Header />
-        <div className="mt-40 text-secondary lg:mt-44">
+        <div className="p-6 mt-40 text-secondary lg:mt-44">
           <MainPage />
-          <div className="lg:w-3/5 mx-auto">
+          <div className="p-6 lg:w-3/5 mx-auto">
             <AboutMe />
             <Experience />
             <Projects />

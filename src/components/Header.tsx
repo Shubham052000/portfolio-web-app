@@ -2,8 +2,7 @@ import resume from "../static/resume.pdf";
 
 const Header = () => {
   return (
-    <nav className="flex p-2 justify-end ">
-      {/* Add image */}
+    <nav className="sticky top-0 z-10 text-primary flex justify-end backdrop-filter backdrop-blur-lg p-4 bg-opacity-80">
       <div className="text-md flex gap-10 items-center">
         <a href="#" className="hover:text-accented-low duration-150">
           <span className="text-accented-low">01. &nbsp;</span>About
@@ -28,6 +27,7 @@ const Header = () => {
           Resume
         </a>
       </div>
+      {/* Add image */}
     </nav>
   );
 };
