@@ -23,10 +23,13 @@ const Experience = () => {
             <span className="text-xl font-semibold text-">{job.position} </span>
             <a
               href={job.url}
-              className="text-xl text-accented-high font-semibold inline-block mb-8"
+              className="text-xl text-accented-high font-semibold inline-block "
             >
               @{job.title}
             </a>
+            <span className="block mb-8 text-sm text-primary">
+              {job.tenure}
+            </span>
 
             <p className="mb-4 text-lg">{job.description}</p>
 
