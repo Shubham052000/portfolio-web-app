@@ -11,7 +11,7 @@ const MainPage = () => {
           </h2>
           <h3 className="text-7xl font-bold mb-5">I'm a Frontend developer.</h3>
 
-          <p className="text-lg w-4/5 lg:w-1/2">
+          <p className="text-lg w-4/5 lg:w-2/3">
             I'm a software engineer specializing in building and designing
             exceptional frontend experiences using ReactJS. Currently, I'm
             focused on building front-end ReactJS applications with{" "}

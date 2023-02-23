@@ -5,11 +5,20 @@
     "tenure": "Feb 2021-Present",
     "position": "Associate Professional Software Engineer",
     "url": "https://dxc.com/us/en/",
-    "description": "I joined DXC as an Associate Professional Software Engineer fresher where I got my first professional project with NAB(National Australia Bank) where I learned all about ReactJS front-end web-development from best of the mentors who were from India, Australia, Philipines & Vietnam. Experienced working with agile methodologies, using 3rd party UI Toolkit libraries & constantly evolving client requirements",
+    "description": "I joined DXC as an Associate Professional Software Engineer fresher where I got my first professional project with NAB(National Australia Bank) where I learned all about ReactJS front-end web-development from best of the mentors who were from India, Australia, Philippines & Vietnam. Experienced working with agile methodologies, using 3rd party UI Toolkit libraries & constantly evolving client requirements",
     "bullets": [
-      "Write accessible, reusable, interactive and unit-tested react components for clients that can be used across different internal projects",
-      "Engineered and maintained code for client primarily using TypeScript, ReactJS,styled-components and GraphQL",
-      "Communicate with teams of UI-engineers, UX-designers, testers and clients on day-to-day basis"
+      {
+        "id": "01",
+        "text": "Write accessible, reusable, interactive and unit-tested react components for clients that can be used across different internal projects"
+      },
+      {
+        "id": "02",
+        "text": "Engineered and maintained code for client primarily using TypeScript, ReactJS,styled-components and GraphQL"
+      },
+      {
+        "id": "03",
+        "text": "Communicate with teams of UI-engineers, UX-designers, testers and clients on day-to-day basis"
+      }
     ]
   }
 ]

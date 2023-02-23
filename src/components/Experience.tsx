@@ -6,14 +6,17 @@ type experienceProps = {
   tenure: string;
   position: string;
   description: string;
-  bullets: string[];
+  bullets: {
+    id: string;
+    text: string;
+  }[];
   url: string;
 };
 
 const Experience = () => {
   return (
     <section id="experience" className="mt-40 w-3/4">
-      <h2 className="text-primary text-2xl font-semibold mb-10 underline underline-offset-4">
+      <h2 className="pt-20 text-primary text-2xl font-semibold mb-10 underline underline-offset-4">
         <span>02.&nbsp;</span> Where I've Worked
       </h2>
 
@@ -35,9 +38,16 @@ const Experience = () => {
 
             <ul>
               {job.bullets.map((bullet) => (
-                <li className="flex" key={job.bullets.indexOf(bullet)}>
-                  <span className="text-accented-high text-xl pr-5">▹</span>
-                  <span className="text-primary text-lg">{bullet}</span>
+                <li key={bullet.id} className="flex">
+                  <span
+                    key={"bullet"}
+                    className="text-accented-high text-xl pr-5"
+                  >
+                    ▹
+                  </span>
+                  <span key={"bullet-text"} className="text-primary text-lg">
+                    {bullet.text}
+                  </span>
                 </li>
               ))}
             </ul>

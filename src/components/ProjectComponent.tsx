@@ -26,7 +26,10 @@ const ProjectComponent = ({ data }: { data: dataObject }) => {
         <div className="flex items-center gap-1">
           {data.toolsUsed.map((tool) => {
             return (
-              <span className="text-sm  border border-accented-low text-accented-high px-2 py-1 rounded-full hover:bg-accented-dark duration-500">
+              <span
+                key={data.toolsUsed.indexOf(tool)}
+                className="text-sm text-center border border-accented-low text-accented-high px-2 py-1 rounded-full hover:bg-accented-dark duration-500"
+              >
                 {tool}
               </span>
             );
