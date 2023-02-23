@@ -2,7 +2,7 @@ import resume from "../static/resume.pdf";
 
 const Header = () => {
   return (
-    <nav className="sticky top-0 z-10 text-primary flex justify-end p-4 bg-background bg-opacity-90">
+    <nav className="sticky top-0 z-10 text-primary flex justify-end p-4 bg-background bg-opacity-90 px-10">
       <div className="text-md flex gap-10 items-center">
         <a href="#about" className="hover:text-accented-low duration-150">
           <span className="text-accented-low">01. &nbsp;</span>About

@@ -9,7 +9,7 @@ module.exports = {
         card: "#121e35",
         primary: "#cbd5e1",
         secondary: "#94a3b8",
-        "accented-dark": "#134e4a",
+        "accented-dark": "#0c3a37",
         "accented-low": "#14b8a6",
         "accented-high": "#5eead4",
       },

@@ -23,12 +23,12 @@ const ProjectComponent = ({ data }: { data: dataObject }) => {
           {data.title}
         </a>
         <p className="mb-5">{data.description}</p>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center flex-wrap gap-1">
           {data.toolsUsed.map((tool) => {
             return (
               <span
                 key={data.toolsUsed.indexOf(tool)}
-                className="text-sm text-center border border-accented-low text-accented-high px-2 py-1 rounded-full hover:bg-accented-dark duration-500"
+                className="text-sm text-center border border-accented-low text-accented-high px-2 py-1 rounded-full hover:bg-accented-dark duration-500 mb-2"
               >
                 {tool}
               </span>
