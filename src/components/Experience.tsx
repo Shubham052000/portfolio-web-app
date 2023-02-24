@@ -7,7 +7,7 @@ type experienceProps = {
   position: string;
   description: string;
   bullets: {
-    id: string;
+    id: number;
     text: string;
   }[];
   url: string;
@@ -22,7 +22,7 @@ const Experience = () => {
 
       {data.map((job: experienceProps) => {
         return (
-          <>
+          <div key={job.id}>
             <span className="text-xl font-semibold text-">{job.position} </span>
             <a
               href={job.url}
@@ -39,19 +39,12 @@ const Experience = () => {
             <ul>
               {job.bullets.map((bullet) => (
                 <li key={bullet.id} className="flex">
-                  <span
-                    key={"bullet"}
-                    className="text-accented-high text-xl pr-5"
-                  >
-                    ▹
-                  </span>
-                  <span key={"bullet-text"} className="text-primary text-lg">
-                    {bullet.text}
-                  </span>
+                  <span className="text-accented-high text-xl pr-5">▹</span>
+                  <span className="text-primary text-lg">{bullet.text}</span>
                 </li>
               ))}
             </ul>
-          </>
+          </div>
         );
       })}
     </section>

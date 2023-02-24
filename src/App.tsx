@@ -11,7 +11,7 @@ function App() {
     <>
       <div className="bg-background text-primary">
         <Header />
-        <div className="p-6 mt-40 text-secondary lg:mt-44">
+        <div className="p-6 mt-40 text-secondary lg:mt-48">
           <MainPage />
           <div className="p-6 lg:w-3/5 mx-auto">
             <AboutMe />
