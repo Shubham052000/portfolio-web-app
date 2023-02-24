@@ -13,18 +13,19 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="mt-40 text-lg mb-20">
-      <h2 className="text-primary text-2xl font-semibold mb-20 underline underline-offset-4">
-        <span>04.&nbsp;</span> Connect with me
+      <h2 className="text-accented-high text-lg font-semibold mb-20 text-center underline underline-offset-4">
+        <span>04.</span> Find me at :
       </h2>
       <div className="flex gap-10 justify-around items-center w-1/2 mx-auto">
         {contacts.map(({ title, svg, url, openInNewPage }) => {
           return (
             <div
               key={title}
-              className="p-2 rounded-lg bg-card hover:scale-125 duration-500"
+              className="px-5 py-4 rounded-lg bg-card duration-300 flex flex-col justify-center items-center gap-2"
               onClick={() => clickHandler(openInNewPage, url)}
             >
               {svg}
+              {title}
             </div>
           );
         })}
