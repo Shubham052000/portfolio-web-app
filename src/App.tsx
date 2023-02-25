@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div className="bg-background text-primary">
+      <div id="main" className="bg-background text-primary">
         <Header />
         <div className="p-6 mt-40 text-secondary lg:mt-48">
           <MainPage />

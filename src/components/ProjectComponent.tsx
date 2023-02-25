@@ -36,7 +36,7 @@ const ProjectComponent = ({ data }: { data: dataObject }) => {
           })}
         </div>
       </div>
-      <a href={data.sourceCode} target="_blank">
+      <a href={data.liveDemo} target="_blank">
         <img
           src={data.image}
           className="object-cover h-56 w-96 basis-1/3 rounded-lg hover:scale-110 duration-300"

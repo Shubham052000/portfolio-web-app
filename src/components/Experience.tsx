@@ -26,9 +26,14 @@ const Experience = () => {
             <span className="text-xl font-semibold text-">{job.position} </span>
             <a
               href={job.url}
-              className="text-xl text-accented-high font-semibold inline-block "
+              className="text-xl group text-accented-high transition-all duration-300 ease-in-out font-semibold"
+              target="_blank"
             >
-              @{job.title}
+              {" "}
+              @
+              <span className="bg-left-bottom bg-gradient-to-r from-accented-high to-accented-high bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-300 ease-out">
+                {job.title}
+              </span>
             </a>
             <span className="block mb-8 text-sm text-primary">
               {job.tenure}
