@@ -4,7 +4,10 @@ const Header = () => {
   return (
     <nav className="sticky top-0 z-10 text-primary flex justify-between items-center bg-background bg-opacity-90 px-8 py-3">
       <a href="#main">
-        <img src="src/static/logo.png" className="w-14" />
+        <img
+          src="https://raw.githubusercontent.com/Shubham052000/portfolio-web-app/main/src/static/logo.png"
+          className="w-14"
+        />
       </a>
 
       <div className="text-md flex gap-10 items-center">
