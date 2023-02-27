@@ -21,20 +21,20 @@ const Contact = () => {
     }, 4000);
   };
   return (
-    <section id="contact" className="mt-40 text-lg mb-20">
-      <h2 className="text-accented-high text-lg font-semibold mb-20 text-center underline underline-offset-4">
+    <section id="contact" className="mt-40 text-sm md:text-lg mb-20">
+      <h2 className="text-accented-high text-sm md:text-lg font-semibold mb-20 text-center underline underline-offset-4">
         <span>04.</span> Find me at :
       </h2>
-      <div className="flex gap-10 justify-around items-center w-1/2 mx-auto">
+      <div className="flex flex-col md:flex-row gap-10 justify-around items-center w-1/2 mx-auto">
         {contacts.map(({ title, svg, url, openInNewPage }) => {
           return (
             <div
               key={title}
-              className="px-5 py-4 rounded-lg bg-card duration-300 flex flex-col justify-center items-center gap-2"
+              className="px-3 py-2 md:px-5 md:py-4 rounded-lg bg-card duration-300 flex flex-col justify-center items-center gap-2"
               onClick={() => emailClickHandler(openInNewPage, url)}
             >
               {svg}
-              {title}
+              <p className="text-sm">{title}</p>
             </div>
           );
         })}

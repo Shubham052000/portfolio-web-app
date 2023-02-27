@@ -2,7 +2,7 @@ import resume from "../static/resume.pdf";
 
 const Header = () => {
   return (
-    <nav className="sticky top-0 z-10 text-primary flex justify-between items-center bg-background bg-opacity-90 px-8 py-3">
+    <nav className="invisible sticky top-0 z-10 text-primary flex justify-between items-center bg-background bg-opacity-90 px-8 py-3 md:visible">
       <a href="#main">
         <img
           src="https://raw.githubusercontent.com/Shubham052000/portfolio-web-app/main/src/static/logo.png"
