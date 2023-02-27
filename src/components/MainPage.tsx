@@ -3,15 +3,17 @@ const MainPage = () => {
     <>
       <section id="hero" className="h-screen lg:w-3/5 mx-auto">
         <>
-          <h1 className="text-lg text-accented-low mb-5 tracking-wider">
+          <h1 className="text-sm md:text-lg text-accented-low mb-5 tracking-wider">
             Hi, my name is
           </h1>
-          <h2 className="text-7xl font-bold text-slate-300 mb-4 ">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-slate-300 mb-4 ">
             Shubham Satyawali.
           </h2>
-          <h3 className="text-7xl font-bold mb-5">I'm a Frontend developer.</h3>
+          <h3 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-5">
+            I'm a Frontend developer.
+          </h3>
 
-          <p className="text-lg w-4/5 lg:w-2/3">
+          <p className="text-md md:text-lg w-4/5 lg:w-2/3">
             I'm a software engineer who takes pleasure in building exceptional
             frontend experiences using ReactJS library. Currently, I'm working
             with{" "}
