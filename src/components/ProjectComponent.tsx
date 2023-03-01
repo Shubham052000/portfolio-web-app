@@ -12,7 +12,7 @@ type dataObject = {
 
 const ProjectComponent = ({ data }: { data: dataObject }) => {
   return (
-    <li className="bg-card px-16 py-8 rounded-md mb-4 flex gap-32 items-center overflow-hidden">
+    <li className="bg-card px-4 py-4 md:px-6 md:py-6 lg:px-16 lg:py-8 rounded-md mb-4 flex flex-col md:flex-row gap-4 md:gap-32 items-center overflow-hidden">
       <div className="basis-2/3">
         <p className="text-sm text-accented-low">Featured Project</p>
         <a
