@@ -25,7 +25,7 @@ const Contact = () => {
       <h2 className="text-accented-high text-sm md:text-lg font-semibold mb-20 text-center underline underline-offset-4">
         <span>04.</span> Find me at :
       </h2>
-      <div className="flex flex-col md:flex-row gap-10 justify-around items-center w-1/2 mx-auto">
+      <div className="flex flex-col md:flex-row gap-10 justify-around md:items-center w-1/3 md:w-1/2 mx-auto">
         {contacts.map(({ title, svg, url, openInNewPage }) => {
           return (
             <div
