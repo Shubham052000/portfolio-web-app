@@ -8,22 +8,23 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <>
-      <div id="main" className="bg-background text-primary">
-        <Header />
-        <div className="p-6 mt-40 text-secondary lg:mt-48">
-          <MainPage />
-          <div className="p-6 lg:w-3/5 mx-auto">
-            <AboutMe />
-            <Experience />
-            <Projects />
-            <Contact />
-          </div>
+    <div
+      id="main"
+      className="bg-background text-primary w-full overflow-x-hidden"
+    >
+      <Header />
+      <div className="p-6 mt-40 text-secondary lg:mt-48">
+        <MainPage />
+        <div className="p-6 lg:w-3/5 mx-auto">
+          <AboutMe />
+          <Experience />
+          <Projects />
+          <Contact />
         </div>
-
-        <Footer />
       </div>
-    </>
+
+      <Footer />
+    </div>
   );
 }
 
