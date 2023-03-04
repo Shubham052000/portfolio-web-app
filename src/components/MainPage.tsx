@@ -1,3 +1,5 @@
+import resume from "../static/resume.pdf";
+
 const MainPage = () => {
   return (
     <>
@@ -39,6 +41,13 @@ const MainPage = () => {
             (client) .
           </p>
         </>
+        <a
+          className="block text-center px-4 py-2 border border-accented-low text-accented-high rounded-md w-full mt-10 md:hidden active:bg-accented-dark duration-300"
+          href={resume}
+          download={"Resume_Shubham_Satyawali"}
+        >
+          Resume
+        </a>
       </section>
     </>
   );
