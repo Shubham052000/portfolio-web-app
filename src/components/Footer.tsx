@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="text-center pb-16">
-      <p className="text-xs md:text-md">
+      <p className="text-xs md:text-base">
         Built by{" "}
         <span className="font-semibold text-accented-high">
           Shubham Satyawali

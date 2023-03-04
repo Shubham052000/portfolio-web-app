@@ -1,7 +1,7 @@
 const MainPage = () => {
   return (
     <>
-      <section id="hero" className="h-screen lg:w-3/5 mx-auto">
+      <section id="hero" className="h-screen lg:w-4/5 mx-auto">
         <>
           <h1 className="text-sm md:text-lg text-accented-low mb-5 tracking-wider">
             Hi, my name is
