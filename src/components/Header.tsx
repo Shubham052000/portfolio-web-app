@@ -1,12 +1,18 @@
 import { useState } from "react";
+import useScrollDirection from "../hooks/useScrollDirection";
 import resume from "../static/resume.pdf";
 
 const Header = () => {
   const [showOverlay, setShowOverlay] = useState(false);
-  console.log(showOverlay);
+  const scrollDirection = useScrollDirection();
+
   return (
     <>
-      <nav className="hidden sticky top-0 z-10 text-primary md:flex justify-between items-center bg-background bg-opacity-90 px-8 py-3 ">
+      <nav
+        className={`hidden sticky ${
+          scrollDirection === "down" ? "-top-20" : "top-0"
+        } h-20 top-0 z-10 text-primary md:flex justify-between items-center bg-background bg-opacity-90 px-8 py-3 transition-all duration-500`}
+      >
         <a href="#main">
           <img
             src="https://raw.githubusercontent.com/Shubham052000/portfolio-web-app/main/src/static/logo.png"
