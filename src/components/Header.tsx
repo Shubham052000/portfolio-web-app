@@ -11,7 +11,7 @@ const Header = () => {
       <nav
         className={`hidden sticky ${
           scrollDirection === "down" ? "-top-20" : "top-0"
-        } h-20 top-0 z-10 text-primary md:flex justify-between items-center bg-background bg-opacity-90 px-8 py-3 transition-all duration-500`}
+        } h-20 z-10 text-primary md:flex justify-between items-center bg-background bg-opacity-90 px-8 py-3 transition-all duration-500`}
       >
         <a href="#main">
           <img
