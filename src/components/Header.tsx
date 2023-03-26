@@ -50,7 +50,11 @@ const Header = () => {
       </nav>
 
       {/* Mobile Menu */}
-      <nav className="flex md:hidden sticky top-0 z-30 text-primary justify-between items-center bg-background bg-opacity-90 px-4 py-2 pt-5">
+      <nav
+        className={`flex sticky ${
+          scrollDirection === "down" ? "-top-14" : "top-0"
+        } h-14 z-10 text-primary justify-between items-center bg-background bg-opacity-90 px-4 py-2 pt-5 md:hidden duration-500`}
+      >
         <a href="#main">
           <img
             src="https://raw.githubusercontent.com/Shubham052000/portfolio-web-app/main/src/static/logo.png"

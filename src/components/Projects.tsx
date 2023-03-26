@@ -8,8 +8,11 @@ const Projects = () => {
         <span>03.&nbsp;</span> Check out some of my work
       </h2>
       <ul>
-        {data.map((projectData) => (
-          <ProjectComponent data={projectData} key={projectData.id} />
+        {data.map((projectData, index) => (
+          <ProjectComponent
+            key={projectData.id}
+            data={{ ...projectData, index: index + 1 }}
+          />
         ))}
       </ul>
     </section>
