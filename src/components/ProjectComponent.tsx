@@ -1,4 +1,4 @@
-import React from "react";
+import { externalLinkSVG, githubSVG } from "../static/contactMe";
 
 type dataObject = {
   id: number;
@@ -8,22 +8,26 @@ type dataObject = {
   sourceCode: string;
   liveDemo: string | undefined;
   description: string;
+  index: number;
 };
 
 const ProjectComponent = ({ data }: { data: dataObject }) => {
   return (
     <li className="bg-card px-4 py-4 md:px-6 md:py-6 lg:px-16 lg:py-8 rounded-md mb-4 flex flex-col md:flex-row gap-4 md:gap-32 items-center overflow-hidden">
       <div className="basis-2/3">
-        <p className="text-sm text-accented-low">Featured Project</p>
-        <a
-          href={data.sourceCode}
-          className="text-3xl font-bold block mb-5 hover:text-accented-high duration-500"
-          target="_blank"
-        >
-          {data.title}
-        </a>
-        <p className="mb-5">{data.description}</p>
-        <div className="flex items-center flex-wrap gap-1">
+        <p className=" text-3xl md:text-5xl text-center md:text-left text-light font-bold mb-4">
+          {data.index < 10 ? "0" + data.index : data.index}.
+        </p>
+        <div className="flex justify-center items-center gap-2 md:justify-between mb-2 ">
+          <p className="text-xl text-primary font-bold md:text-3xl col-span-2">
+            {data.title}
+          </p>
+          <a href={data.sourceCode} target="_blank">
+            {githubSVG}
+          </a>
+        </div>
+        <p className="text-center md:text-left mb-5">{data.description}</p>
+        <div className="flex flex-wrap gap-1 justify-center md:justify-start">
           {data.toolsUsed.map((tool) => {
             return (
               <span
@@ -36,6 +40,7 @@ const ProjectComponent = ({ data }: { data: dataObject }) => {
           })}
         </div>
       </div>
+
       <a href={data.liveDemo} target="_blank">
         <img
           src={data.image}
