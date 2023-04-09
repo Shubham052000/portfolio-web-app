@@ -32,7 +32,7 @@ const AboutMe = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-          JavaScript (ES6+)
+          ReactJs
         </li>
         <li className="flex items-center gap-2">
           {" "}
@@ -68,7 +68,7 @@ const AboutMe = () => {
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-          ReactJs (v16.8+)
+          JavaScript (ES6+)
         </li>
         <li className="flex items-center gap-2">
           {" "}

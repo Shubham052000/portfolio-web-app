@@ -15,7 +15,7 @@ type experienceProps = {
 
 const Experience = () => {
   return (
-    <section id="experience" className="mt-40 w-full md:w-3/4">
+    <section id="experience" className="mt-40 w-full ">
       <h2 className="pt-20 text-primary text-md md:text-2xl font-semibold mb-10 underline underline-offset-4">
         <span>02.&nbsp;</span> Where I've Worked
       </h2>

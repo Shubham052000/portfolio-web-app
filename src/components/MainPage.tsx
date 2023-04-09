@@ -17,8 +17,8 @@ const MainPage = () => {
 
           <p className="text-md md:text-lg w-4/5 lg:w-2/3">
             I'm a software engineer who takes pleasure in building exceptional
-            frontend experiences using ReactJS library. Currently, I'm working
-            with{" "}
+            frontend experiences using modern webdev tools like ReactJS,
+            TypeScript & Tailwind to name a few. Currently, I'm working with{" "}
             <a
               className="group text-accented-high transition-all duration-300 ease-in-out"
               href="https://dxc.com/us/en/"
@@ -28,7 +28,7 @@ const MainPage = () => {
                 DXC Technology
               </span>
             </a>{" "}
-            in providing the best of solutions to{" "}
+            in providing the best of solutions to our client{" "}
             <a
               href="https://www.nab.com.au/"
               target="_blank"
@@ -37,8 +37,8 @@ const MainPage = () => {
               <span className="bg-left-bottom bg-gradient-to-r from-accented-high to-accented-high bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-300 ease-out">
                 NAB
               </span>
-            </a>{" "}
-            (client) .
+            </a>
+            .
           </p>
         </>
         <a
