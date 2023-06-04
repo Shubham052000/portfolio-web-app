@@ -1,30 +1,23 @@
-import resume from "../static/resume.pdf";
+import resume from "../static/resume.pdf"
 
 const MainPage = () => {
   return (
     <>
-      <section id="hero" className="h-screen lg:w-4/5 mx-auto">
+      <section id="hero" className="mx-auto h-screen lg:w-4/5">
         <>
-          <h1 className="text-sm md:text-lg text-accented-low mb-5 tracking-wider">
-            Hi, my name is
-          </h1>
-          <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-slate-300 mb-4 ">
-            Shubham Satyawali.
-          </h2>
-          <h3 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-5">
-            I'm a Frontend developer.
-          </h3>
+          <h1 className="mb-5 text-sm tracking-wider text-accented-low md:text-lg">Hi, my name is</h1>
+          <h2 className="mb-4 text-3xl font-bold text-slate-300 md:text-5xl lg:text-7xl ">Shubham Satyawali.</h2>
+          <h3 className="mb-5 text-3xl font-bold md:text-5xl lg:text-7xl">I'm a Frontend developer.</h3>
 
-          <p className="text-md md:text-lg w-4/5 lg:w-2/3">
-            I'm a software engineer who takes pleasure in building exceptional
-            frontend experiences using modern webdev tools like ReactJS,
-            TypeScript & Tailwind to name a few. Currently, I'm working with{" "}
+          <p className="text-md w-4/5 md:text-lg lg:w-2/3">
+            I'm a software engineer who takes pleasure in building exceptional frontend experiences using modern webdev
+            tools like ReactJS, TypeScript & Tailwind to name a few. Currently, I'm working with{" "}
             <a
               className="group text-accented-high transition-all duration-300 ease-in-out"
               href="https://dxc.com/us/en/"
               target="_blank"
             >
-              <span className="bg-left-bottom bg-gradient-to-r from-accented-high to-accented-high bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-300 ease-out">
+              <span className="bg-gradient-to-r from-accented-high to-accented-high bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-[length:100%_1px]">
                 DXC Technology
               </span>
             </a>{" "}
@@ -34,7 +27,7 @@ const MainPage = () => {
               target="_blank"
               className="group text-accented-high transition-all duration-300 ease-in-out"
             >
-              <span className="bg-left-bottom bg-gradient-to-r from-accented-high to-accented-high bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] transition-all duration-300 ease-out">
+              <span className="bg-gradient-to-r from-accented-high to-accented-high bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-[length:100%_1px]">
                 NAB
               </span>
             </a>
@@ -42,7 +35,7 @@ const MainPage = () => {
           </p>
         </>
         <a
-          className="block text-center px-4 py-2 border border-accented-low text-accented-high rounded-md w-full mt-10 md:hidden active:bg-accented-dark duration-300"
+          className="mt-10 block w-full rounded-md border border-accented-low px-4 py-2 text-center text-accented-high duration-300 active:bg-accented-dark md:hidden"
           href={resume}
           download={"Resume_Shubham_Satyawali"}
         >
@@ -50,7 +43,7 @@ const MainPage = () => {
         </a>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default MainPage;
+export default MainPage

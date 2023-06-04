@@ -1,17 +1,17 @@
-import { useState } from "react";
-import useScrollDirection from "../hooks/useScrollDirection";
-import resume from "../static/resume.pdf";
+import { useState } from "react"
+import useScrollDirection from "../hooks/useScrollDirection"
+import resume from "../static/resume.pdf"
 
 const Header = () => {
-  const [showOverlay, setShowOverlay] = useState(false);
-  const scrollDirection = useScrollDirection();
+  const [showOverlay, setShowOverlay] = useState(false)
+  const scrollDirection = useScrollDirection()
 
   return (
     <>
       <nav
-        className={`hidden sticky ${
+        className={`sticky hidden ${
           scrollDirection === "down" ? "-top-20" : "top-0"
-        } h-20 z-10 text-primary md:flex justify-between items-center bg-background bg-opacity-90 px-8 py-3 transition-all duration-500`}
+        } z-10 h-20 items-center justify-between bg-background bg-opacity-90 px-8 py-3 text-primary transition-all duration-500 md:flex`}
       >
         <a href="#main">
           <img
@@ -20,26 +20,23 @@ const Header = () => {
           />
         </a>
 
-        <div className="text-md flex gap-10 items-center">
-          <a href="#about" className="hover:text-accented-low duration-150">
+        <div className="text-md flex items-center gap-10">
+          <a href="#about" className="duration-150 hover:text-accented-low">
             <span className="text-accented-low">01. &nbsp;</span>About
           </a>
 
-          <a
-            href="#experience"
-            className="hover:text-accented-low duration-150"
-          >
+          <a href="#experience" className="duration-150 hover:text-accented-low">
             <span className="text-accented-low">02. &nbsp;</span>Experience
           </a>
-          <a href="#work" className=" hover:text-accented-low duration-150">
+          <a href="#work" className=" duration-150 hover:text-accented-low">
             <span className="text-accented-low">03. &nbsp;</span>Work
           </a>
-          <a href="#contact" className=" hover:text-accented-low 150">
+          <a href="#contact" className=" 150 hover:text-accented-low">
             <span className="text-accented-low">04. &nbsp;</span>
             Contact
           </a>
           <a
-            className="px-4 py-2 border rounded-md border-accented-high text-accented-low hover:bg-accented-dark duration-300"
+            className="rounded-md border border-accented-high px-4 py-2 text-accented-low duration-300 hover:bg-accented-dark"
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
@@ -51,9 +48,9 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <nav
-        className={`flex sticky ${
+        className={`sticky flex ${
           scrollDirection === "down" ? "-top-14" : "top-0"
-        } h-14 z-30 text-primary justify-between items-center bg-background bg-opacity-90 px-4 py-2 pt-5 md:hidden duration-200`}
+        } z-30 h-14 items-center justify-between bg-background bg-opacity-90 px-4 py-2 pt-5 text-primary duration-200 md:hidden`}
       >
         <a href="#main">
           <img
@@ -63,11 +60,9 @@ const Header = () => {
         </a>
 
         <button
-          className={`${
-            showOverlay && "open"
-          } rounded-full px-4 py-2 focus:ouline-none hamburger`}
+          className={`${showOverlay && "open"} focus:ouline-none hamburger rounded-full px-4 py-2`}
           onClick={() => {
-            setShowOverlay((overlay) => !overlay);
+            setShowOverlay((overlay) => !overlay)
           }}
         >
           <span className="hamburger-top"></span>
@@ -78,14 +73,14 @@ const Header = () => {
       <div
         className={`fixed inset-0 z-20 ${
           showOverlay ? "flex" : "hidden"
-        } flex-col items-center self-end w-full h-full min-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-primary uppercase divide-y divide-secondary opacity-90 bg-background`}
+        } h-full min-h-screen w-full flex-col items-center divide-y divide-secondary self-end bg-background px-6 py-1 pt-24 pb-4 uppercase tracking-widest text-primary opacity-90`}
       >
         <div className="w-full py-3 text-center">
           <a
             href="#about"
             className="block"
             onClick={() => {
-              setShowOverlay(false);
+              setShowOverlay(false)
             }}
           >
             About
@@ -96,7 +91,7 @@ const Header = () => {
             href="#experience"
             className="block"
             onClick={() => {
-              setShowOverlay(false);
+              setShowOverlay(false)
             }}
           >
             Experience
@@ -107,7 +102,7 @@ const Header = () => {
             href="#work"
             className="block"
             onClick={() => {
-              setShowOverlay(false);
+              setShowOverlay(false)
             }}
           >
             Work
@@ -118,7 +113,7 @@ const Header = () => {
             href="#contact"
             className="block"
             onClick={() => {
-              setShowOverlay(false);
+              setShowOverlay(false)
             }}
           >
             Contact
@@ -126,7 +121,7 @@ const Header = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
