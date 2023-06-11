@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { contacts, tickSVG, copySVG } from "../static/contactMe"
+import { contacts, tickSVG, copySVG, closeSVG } from "../static/contactMe"
 
 const Contact = () => {
   const [showEmail, setShowEmail] = useState(false)
@@ -43,10 +43,18 @@ const Contact = () => {
       </div>
 
       <div
-        className={`mx-auto mt-16 w-min rounded-full bg-card py-4 px-8 text-center text-primary ${
+        className={`relative mx-auto mt-16 w-min rounded-full bg-card py-4 px-8 text-center text-primary ${
           showEmail ? "block" : "invisible"
         } `}
       >
+        <span
+          className="absolute right-6 top-3"
+          onClick={() => {
+            setShowEmail(false)
+          }}
+        >
+          {closeSVG}
+        </span>
         <p className="text-accented-low">{copied ? "Copied to clipboard 🎉" : "Drop an email at 👇:"}</p>
         <div className="flex items-center justify-center gap-6 ">
           <p className="inline">{email}</p>

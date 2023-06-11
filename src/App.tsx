@@ -10,9 +10,9 @@ function App() {
   return (
     <div id="main" className="overflow-x-clip bg-background text-primary">
       <Header />
-      <div className="p-10 pt-40 text-secondary md:mt-28 lg:mt-0 xl:mt-16">
+      <div className="p-10 pt-32 text-secondary md:mt-28 lg:mt-0 xl:mt-16">
         <MainPage />
-        <div className="mx-auto p-6 lg:w-3/5">
+        <div className="mx-auto w-5/6 p-6 lg:w-2/3">
           <AboutMe />
           <Experience />
           <Projects />
