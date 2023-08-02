@@ -1,50 +1,51 @@
-[
-  {
-    "id": 101,
-    "title": "To-do",
-    "image": "https://user-images.githubusercontent.com/31250818/192136981-3d9a37cd-fde9-48c0-a2a2-786101056347.png",
-    "toolsUsed": ["TypeScript", "React", "Redux", "Firebase"],
-    "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/3-to-do-app",
-    "liveDemo": "https://to-do-typescript-59f0a.web.app/",
-    "description": "An application where one can create update and delete their daily-todos which  all are synced with firebase comes with a simple and minimalistic UI and built with the following tools."
-  },
-  {
-    "id": 102,
-    "title": "ReactMeals",
-    "image": "https://user-images.githubusercontent.com/31250818/192115472-2f02ec64-bb67-48fd-bf35-8ccbbd09e63d.png",
-    "toolsUsed": ["JavaScript", "React", "Firebase"],
-    "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/2-food-order-app",
-    "liveDemo": "https://food-app-9a0c4.web.app/",
-    "description": "A demo for a food ordering application where one can choose from a variety of dishes add to cart, built with the following tools."
-  },
-  {
-    "id": 110,
-    "title": "Great-Quotes",
-    "image": "https://raw.githubusercontent.com/Shubham052000/Web-Development/f93746c181905f41339d5b420bb46358f4c66e44/ReactJS/13Practicing-MultiPage-SPAs-with-react-router/Screenshots/greateQuotes.png",
-    "toolsUsed": [
-      "JavaScript",
-      "React",
-      "Context API",
-      "React-Router",
-      "Firebase"
-    ],
-    "sourceCode": "https://github.com/Shubham052000/Web-Development/tree/main/ReactJS/13Practicing-MultiPage-SPAs-with-react-router",
-    "liveDemo": "https://great-quotes-8e617.web.app/quotes",
-    "description": "A quotes app where one can find, share, post their favorite quotes and also share what their feelings throught the comment section of the , built with the following tools."
-  },
-  {
-    "id": 120,
-    "title": "Aniyo",
-    "image": "https://raw.githubusercontent.com/Shubham052000/ReactJS/main/4-aniyo/screenshots/Screenshot%20from%202023-02-25%2017-43-12.png",
-    "toolsUsed": [
-      "JavaScript",
-      "React",
-      "MUI components",
-      "Jikan API",
-      "React-Router"
-    ],
-    "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/4-aniyo",
-    "liveDemo": "https://aniyo-anime.web.app/",
-    "description": "An application for animeheads: visit Aniyo and find and share your favorite anime through the autosuggest search option or through a variety of curated sections like Top anime of all time, Currently airing anime and Upcoming anime, built with the following tools."
-  }
-]
+{
+  "mainProjects": [
+    {
+      "id": 101,
+      "title": "To-do",
+      "image": "https://user-images.githubusercontent.com/31250818/192136981-3d9a37cd-fde9-48c0-a2a2-786101056347.png",
+      "toolsUsed": ["TypeScript", "React", "Redux", "Firebase"],
+      "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/3-to-do-app",
+      "liveDemo": "https://to-do-typescript-59f0a.web.app/",
+      "description": "An application where one can create update and delete their daily-todos which  all are synced with firebase comes with a simple and minimalistic UI and built with the following tools."
+    },
+    {
+      "id": 102,
+      "title": "ReactMeals",
+      "image": "https://user-images.githubusercontent.com/31250818/192115472-2f02ec64-bb67-48fd-bf35-8ccbbd09e63d.png",
+      "toolsUsed": ["JavaScript", "React", "Firebase"],
+      "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/2-food-order-app",
+      "liveDemo": "https://food-app-9a0c4.web.app/",
+      "description": "A demo for a food ordering application where one can choose from a variety of dishes add to cart, built with the following tools."
+    },
+    {
+      "id": 110,
+      "title": "Great-Quotes",
+      "image": "https://raw.githubusercontent.com/Shubham052000/Web-Development/f93746c181905f41339d5b420bb46358f4c66e44/ReactJS/13Practicing-MultiPage-SPAs-with-react-router/Screenshots/greateQuotes.png",
+      "toolsUsed": ["JavaScript", "React", "Context API", "React-Router", "Firebase"],
+      "sourceCode": "https://github.com/Shubham052000/Web-Development/tree/main/ReactJS/13Practicing-MultiPage-SPAs-with-react-router",
+      "liveDemo": "https://great-quotes-8e617.web.app/quotes",
+      "description": "A quotes app where one can find, share, post their favorite quotes and also share what their feelings throught the comment section of the , built with the following tools."
+    },
+    {
+      "id": 120,
+      "title": "Aniyo-v2",
+      "image": "https://raw.githubusercontent.com/Shubham052000/aniyo-2.0-next/main/screenshots/Aniyo-2.0_50.jpg",
+      "toolsUsed": ["TypeScript", "NextJS13", "shadcn components", "Jikan API", "Tailwind-CSS"],
+      "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/4-aniyo",
+      "liveDemo": "https://aniyo.netlify.app",
+      "description": "An application for animeheads: visit Aniyo to find and share your favorite anime through a variety of curated sections like Top anime of all time, Currently airing anime and Upcoming anime or with it's beautiful search page look up your faves and learn more bout 'em. Aniyo-v2 is built with the following tools."
+    }
+  ],
+  "extras": [
+    {
+      "id": 201,
+      "title": "Aniyo-v1",
+      "image": "https://raw.githubusercontent.com/Shubham052000/ReactJS/main/4-aniyo/screenshots/Screenshot%20from%202023-02-25%2017-43-12.png",
+      "toolsUsed": ["JavaScript", "React", "MUI components", "Jikan API", "React-Router"],
+      "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/4-aniyo",
+      "liveDemo": "https://aniyo-anime.web.app/",
+      "description": "An application for animeheads: visit Aniyo and find and share your favorite anime through the autosuggest search option or through a variety of curated sections like Top anime of all time, Currently airing anime and Upcoming anime, built with the following tools."
+    }
+  ]
+}
