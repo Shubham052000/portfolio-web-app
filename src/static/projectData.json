@@ -32,7 +32,7 @@
       "title": "Aniyo-v2",
       "image": "https://raw.githubusercontent.com/Shubham052000/aniyo-2.0-next/main/screenshots/Aniyo-2.0_50.jpg",
       "toolsUsed": ["TypeScript", "NextJS13", "shadcn components", "Jikan API", "Tailwind-CSS"],
-      "sourceCode": "https://github.com/Shubham052000/ReactJS/tree/main/4-aniyo",
+      "sourceCode": "https://github.com/Shubham052000/aniyo-2.0-next",
       "liveDemo": "https://aniyo.netlify.app",
       "description": "An application for animeheads: visit Aniyo to find and share your favorite anime through a variety of curated sections like Top anime of all time, Currently airing anime and Upcoming anime or with it's beautiful search page look up your faves and learn more bout 'em. Aniyo-v2 is built with the following tools."
     }
