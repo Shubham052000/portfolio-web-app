@@ -1,4 +1,4 @@
-05 August 2023
+05 November 2023
 
 icons: remixicons alternatives ionicons,css.gg,feathericons, evaicons, ikonate
 resume: rxresu.me
