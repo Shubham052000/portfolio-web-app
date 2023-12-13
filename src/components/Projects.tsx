@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section id="work" className="mt-40 text-sm md:text-lg">
       <h2 className="text-md mb-10 pt-20 font-semibold text-primary underline underline-offset-4 md:text-2xl">
-        <span>03.&nbsp;</span> Check out some of my work
+        <span>03.&nbsp;</span> Check out some of my work (sorted from newest)
       </h2>
       <ul>
         {data.mainProjects.map((projectData, index) => (
