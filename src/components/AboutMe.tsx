@@ -1,3 +1,17 @@
+const skills = [
+  "ReactJS 16.8+",
+  "TypeScript",
+  "JavaScript (ES6+)",
+  "Tailwind",
+  "react-testing-library & jest",
+  "git & github",
+  "Axios",
+  "Redux",
+  "NextJs 13+",
+  "ReactQuery(Tanstack Query)",
+  "GraphQL",
+]
+
 const AboutMe = () => {
   return (
     <section id="about" className="text-sm md:text-lg">
@@ -12,76 +26,22 @@ const AboutMe = () => {
       </p>
       <p className="mb-3">Here are a few technologies I’ve been working with recently:</p>
       <ul>
-        <li className="flex items-center gap-2">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="h-5 w-5 text-accented-high"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-          ReactJs
-        </li>
-        <li className="flex items-center gap-2">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="h-5 w-5 text-accented-high"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-          TypeScript
-        </li>
-        <li className="flex items-center gap-2">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="h-5 w-5 text-accented-high"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-          JavaScript (ES6+)
-        </li>
-        <li className="flex items-center gap-2">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="h-5 w-5 text-accented-high"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-          Tailwind CSS
-        </li>
-        <li className="flex items-center gap-2">
-          {" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="h-5 w-5 text-accented-high"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-          GraphQL
-        </li>
+        {skills.map((skill) => (
+          <li className="flex items-center gap-2">
+            {" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="h-5 w-5 text-accented-high"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+            {skill}
+          </li>
+        ))}
       </ul>
     </section>
   )

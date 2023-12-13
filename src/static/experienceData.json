@@ -2,7 +2,7 @@
   {
     "id": 101,
     "title": "DXC Technology",
-    "tenure": "Feb 2021-Present",
+    "tenure": "Feb 2021 - June 2023",
     "position": "Associate Professional Software Engineer",
     "url": "https://dxc.com/us/en/",
     "description": "I joined DXC as an Associate Professional Software Engineer fresher where I got my first professional project with NAB(National Australia Bank) where I learned all about ReactJS front-end web-development from best of the mentors who were from India, Australia, Philippines & Vietnam. Experienced working with agile methodologies, using 3rd party UI Toolkit libraries & constantly evolving client requirements",
@@ -18,6 +18,32 @@
       {
         "id": 203,
         "text": "Communicate with teams of UI-engineers, UX-designers, testers and clients on day-to-day basis"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "title": "DXC Technology",
+    "tenure": "July 2023 - Present",
+    "position": "Analyst 1 Software Engineer",
+    "url": "https://dxc.com/us/en/",
+    "description": "Continued my work as a ReactJS frontend dev, started the POOLMASTER project from scratch where we utilized ReactJS18, TypeScript, Axios, ReduxJS, Kendo-react-components, MUI components, react-testing-library and SASS while simultaneously focusing on enhancing my skills by started delving a bit more into various modern tools like TailwindCSS, React-Tanstack Query, NextJS 13+",
+    "bullets": [
+      {
+        "id": 201,
+        "text": "Created reusable components that can be utilized in various other applications, improving development efficiency."
+      },
+      {
+        "id": 202,
+        "text": "Utilized MUI (Material-UI) and Kendo React components to design and implement beautiful and user-friendly interfaces"
+      },
+      {
+        "id": 203,
+        "text": "Wrote unit-tested components using react-testing-library and jest, ensuring high code quality and reliability."
+      },
+      {
+        "id": 204,
+        "text": "Collaborated with backend developers to structure the correct data responses from the APIs ensuring smoothfrontend-backend integration."
       }
     ]
   }

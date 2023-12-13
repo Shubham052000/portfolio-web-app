@@ -22,8 +22,8 @@ const Experience = () => {
 
       {data.map((job: experienceProps) => {
         return (
-          <div key={job.id}>
-            <span className="text-sm font-semibold md:text-xl">{job.position} </span>
+          <div key={job.id} className="mb-16">
+            <span className="text-sm font-semibold underline underline-offset-4 md:text-xl">{job.position} </span>
             <a
               href={job.url}
               className="group text-sm font-semibold text-accented-high transition-all duration-300 ease-in-out md:text-xl"
@@ -35,7 +35,7 @@ const Experience = () => {
                 {job.title}
               </span>
             </a>
-            <span className="mb-8 block text-xs text-primary md:text-sm">{job.tenure}</span>
+            <span className="mb-5 block text-xs text-accented-low md:text-sm">{job.tenure}</span>
 
             <p className="mb-4 text-sm md:text-lg">{job.description}</p>
 
