@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { motion } from "framer-motion"
+
 import useScrollDirection from "../hooks/useScrollDirection"
 import resume from "../static/resume.pdf"
 
@@ -35,14 +37,17 @@ const Header = () => {
             <span className="text-accented-low">04. &nbsp;</span>
             Contact
           </a>
-          <a
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.05 }}
             className="rounded-md border border-accented-high px-4 py-2 text-accented-low duration-300 hover:bg-accented-dark"
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
           >
             Resume
-          </a>
+          </motion.a>
         </div>
       </nav>
 
@@ -73,7 +78,7 @@ const Header = () => {
       <div
         className={`fixed inset-0 z-20 ${
           showOverlay ? "flex" : "hidden"
-        } h-full min-h-screen w-full flex-col items-center divide-y divide-secondary self-end bg-background px-6 py-1 pt-24 pb-4 uppercase tracking-widest text-primary opacity-90`}
+        } h-full min-h-screen w-full flex-col items-center divide-y divide-secondary self-end bg-background px-6 py-1 pb-4 pt-24 uppercase tracking-widest text-primary opacity-90`}
       >
         <div className="w-full py-3 text-center">
           <a
