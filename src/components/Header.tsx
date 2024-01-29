@@ -1,8 +1,25 @@
 import { useState } from "react"
+import { motion } from "framer-motion"
+
 import useScrollDirection from "../hooks/useScrollDirection"
 import resume from "../static/resume.pdf"
+import logo from "../static/logo.png"
 
 const Header = () => {
+  const childVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0 },
+  }
+
+  const parentVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
   const [showOverlay, setShowOverlay] = useState(false)
   const scrollDirection = useScrollDirection()
 
@@ -13,37 +30,50 @@ const Header = () => {
           scrollDirection === "down" ? "-top-20" : "top-0"
         } z-10 h-20 items-center justify-between bg-background bg-opacity-90 px-8 py-3 text-primary transition-all duration-500 md:flex`}
       >
-        <a href="#main">
-          <img
-            src="https://raw.githubusercontent.com/Shubham052000/portfolio-web-app/main/src/static/logo.png"
-            className="w-14"
-          />
-        </a>
+        <motion.a
+          variants={{
+            hidden: { opacity: 0, y: -10 },
+            visible: { opacity: 1, y: 0, transition: { delay: 0.02 } },
+          }}
+          initial="hidden"
+          animate="visible"
+          href="#main"
+        >
+          <img src={logo} className="w-14" />
+        </motion.a>
 
-        <div className="text-md flex items-center gap-10">
-          <a href="#about" className="duration-150 hover:text-accented-low">
+        <motion.div
+          variants={parentVariants}
+          initial="hidden"
+          animate="visible"
+          className="text-md flex items-center gap-10"
+        >
+          <motion.a variants={childVariants} href="#about" className="duration-150 hover:text-accented-low">
             <span className="text-accented-low">01. &nbsp;</span>About
-          </a>
+          </motion.a>
 
-          <a href="#experience" className="duration-150 hover:text-accented-low">
+          <motion.a variants={childVariants} href="#experience" className="duration-150 hover:text-accented-low">
             <span className="text-accented-low">02. &nbsp;</span>Experience
-          </a>
-          <a href="#work" className=" duration-150 hover:text-accented-low">
+          </motion.a>
+          <motion.a variants={childVariants} href="#work" className=" duration-150 hover:text-accented-low">
             <span className="text-accented-low">03. &nbsp;</span>Work
-          </a>
-          <a href="#contact" className=" 150 hover:text-accented-low">
+          </motion.a>
+          <motion.a variants={childVariants} href="#contact" className=" 150 hover:text-accented-low">
             <span className="text-accented-low">04. &nbsp;</span>
             Contact
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            variants={childVariants}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="rounded-md border border-accented-high px-4 py-2 text-accented-low duration-300 hover:bg-accented-dark"
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
           >
             Resume
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </nav>
 
       {/* Mobile Menu */}
@@ -73,7 +103,7 @@ const Header = () => {
       <div
         className={`fixed inset-0 z-20 ${
           showOverlay ? "flex" : "hidden"
-        } h-full min-h-screen w-full flex-col items-center divide-y divide-secondary self-end bg-background px-6 py-1 pt-24 pb-4 uppercase tracking-widest text-primary opacity-90`}
+        } h-full min-h-screen w-full flex-col items-center divide-y divide-secondary self-end bg-background px-6 py-1 pb-4 pt-24 uppercase tracking-widest text-primary opacity-90`}
       >
         <div className="w-full py-3 text-center">
           <a
