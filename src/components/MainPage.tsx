@@ -8,21 +8,19 @@ const MainPage = () => {
   }
   return (
     <>
-      <motion.section
-        variants={{
-          hidden: {},
-          visible: {
-            transition: {
-              staggerChildren: 0.05,
+      <section id="hero" className="mx-auto h-screen lg:w-4/5">
+        <motion.div
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.25,
+              },
             },
-          },
-        }}
-        initial="hidden"
-        animate="visible"
-        id="hero"
-        className="mx-auto h-screen lg:w-4/5"
-      >
-        <>
+          }}
+          initial="hidden"
+          animate="visible"
+        >
           <motion.h1 variants={childVariants} className="mb-5 text-sm tracking-wider text-accented-low md:text-lg">
             Hi, my name is
           </motion.h1>
@@ -60,7 +58,7 @@ const MainPage = () => {
             </a>
             .
           </motion.p>
-        </>
+        </motion.div>
         <a
           className="mt-10 block w-full rounded-md border border-accented-low px-4 py-2 text-center text-accented-high duration-300 active:bg-accented-dark md:hidden"
           href={resume}
@@ -68,7 +66,7 @@ const MainPage = () => {
         >
           Resume
         </a>
-      </motion.section>
+      </section>
     </>
   )
 }
