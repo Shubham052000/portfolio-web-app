@@ -1,15 +1,40 @@
 import resume from "../static/resume.pdf"
+import { motion } from "framer-motion"
 
 const MainPage = () => {
+  const childVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  }
   return (
     <>
       <section id="hero" className="mx-auto h-screen lg:w-4/5">
-        <>
-          <h1 className="mb-5 text-sm tracking-wider text-accented-low md:text-lg">Hi, my name is</h1>
-          <h2 className="mb-4 text-3xl font-bold text-slate-300 md:text-5xl lg:text-7xl ">Shubham Satyawali.</h2>
-          <h3 className="mb-5 text-3xl font-bold md:text-5xl lg:text-7xl">I'm a Frontend developer.</h3>
+        <motion.div
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.25,
+              },
+            },
+          }}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.h1 variants={childVariants} className="mb-5 text-sm tracking-wider text-accented-low md:text-lg">
+            Hi, my name is
+          </motion.h1>
+          <motion.h2
+            variants={childVariants}
+            className="mb-4 text-3xl font-bold text-slate-300 md:text-5xl lg:text-7xl "
+          >
+            Shubham Satyawali.
+          </motion.h2>
+          <motion.h3 variants={childVariants} className="mb-5 text-3xl font-bold md:text-5xl lg:text-7xl">
+            I'm a Frontend developer.
+          </motion.h3>
 
-          <p className="text-md w-4/5 md:text-lg lg:w-2/3">
+          <motion.p variants={childVariants} className="text-md w-4/5 md:text-lg lg:w-2/3">
             I'm a software engineer who takes pleasure in building exceptional frontend experiences using modern webdev
             tools like ReactJS, TypeScript & Tailwind to name a few. Currently, I'm working with{" "}
             <a
@@ -32,8 +57,8 @@ const MainPage = () => {
               </span>
             </a>
             .
-          </p>
-        </>
+          </motion.p>
+        </motion.div>
         <a
           className="mt-10 block w-full rounded-md border border-accented-low px-4 py-2 text-center text-accented-high duration-300 active:bg-accented-dark md:hidden"
           href={resume}
