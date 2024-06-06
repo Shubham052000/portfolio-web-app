@@ -2,7 +2,7 @@
   "mainProjects": [
     {
       "id": 119,
-      "title": "Flowmazon-v2",
+      "title": "Flowmazon",
       "image": "https://raw.githubusercontent.com/Shubham052000/e-commerce-app/main/screenshots/Screenshot%202024-06-06%20185351.png",
       "toolsUsed": ["NextJs 14", "React-Server-Components", "TypeScript", "Daisy UI", "NextAuth", "Google Cloud"],
       "sourceCode": "https://github.com/Shubham052000/e-commerce-app",
