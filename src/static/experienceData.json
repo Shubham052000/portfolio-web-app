@@ -1,49 +1,49 @@
 [
   {
     "id": 102,
-    "title": "DXC Technology",
-    "tenure": "July 2023 - Present",
-    "position": "Analyst 1 Software Engineer",
-    "url": "https://dxc.com/us/en/",
-    "description": "Continued my work as a ReactJS frontend dev, started the POOLMASTER project from scratch where we utilized ReactJS18, TypeScript, Axios, ReduxJS, Kendo-react-components, MUI components, react-testing-library and SASS while simultaneously focusing on enhancing my skills by started delving a bit more into various modern tools like TailwindCSS, React-Tanstack Query, NextJS 13+",
+    "title": "Infosys",
+    "tenure": "July 2024 - Present",
+    "position": "Associate Consulant Software Engineer",
+    "url": "https://infosys.com",
+    "description": "Joined Infosys to further enhance my career and to take up on new challenges and explore new opportunities in July 2024.",
     "bullets": [
       {
-        "id": 201,
-        "text": "Created reusable components that can be utilized in various other applications, improving development efficiency."
+        "id": 20101,
+        "text": "Working for one of the big-4 to develop and enhance their flagship mobility pathway platform, which is a scalable, integrated mobility solution that enables the firm's client s and engagement teams to manage and coordinate coplex mobility services across the end-to-end mobile talent lifecycle via a single platform."
       },
       {
-        "id": 202,
-        "text": "Utilized MUI (Material-UI) and Kendo React components to design and implement beautiful and user-friendly interfaces"
-      },
-      {
-        "id": 203,
-        "text": "Wrote unit-tested components using react-testing-library and jest, ensuring high code quality and reliability."
-      },
-      {
-        "id": 204,
-        "text": "Collaborated with backend developers to structure the correct data responses from the APIs ensuring smoothfrontend-backend integration."
+        "id": 20102,
+        "text": "Developed a Bulk Case creation feature for the app that lead to a significant increase in the number of cases created in a short amount of time and reducing manual effort by more than 80%."
       }
     ]
   },
   {
     "id": 101,
     "title": "DXC Technology",
-    "tenure": "Feb 2021 - June 2023",
-    "position": "Associate Professional Software Engineer",
+    "tenure": "Feb 2021 - June 2024",
+    "position": "Analyst 1 Software Engineer",
     "url": "https://dxc.com/us/en/",
-    "description": "I joined DXC as an Associate Professional Software Engineer fresher where I got my first professional project with NAB(National Australia Bank) where I learned all about ReactJS front-end web-development from best of the mentors who were from India, Australia, Philippines & Vietnam. Experienced working with agile methodologies, using 3rd party UI Toolkit libraries & constantly evolving client requirements",
+    "description": "I joined DXC as an Associate Professional Software Engineer fresher where I got my first professional project with NAB(National Australia Bank) where I learned all about ReactJS front-end web-development from best of the mentors who were from India, Australia, Philippines & Vietnam. Experienced working with agile methodologies, using 3rd party UI Toolkit libraries & constantly evolving client requirements. Later got promoted to Analyst 1 Software Engineering.",
     "bullets": [
       {
-        "id": 201,
-        "text": "Write accessible, reusable, interactive and unit-tested react components for clients that can be used across different internal projects"
+        "id": 10101,
+        "text": "Wrote accessible, reusable, interactive and unit-tested react components for clients that can be used across different internal projects"
       },
       {
-        "id": 202,
+        "id": 10102,
         "text": "Engineered and maintained code for client primarily using TypeScript, ReactJS,styled-components and GraphQL"
       },
       {
-        "id": 203,
+        "id": 10103,
         "text": "Communicate with teams of UI-engineers, UX-designers, testers and clients on day-to-day basis"
+      },
+      {
+        "id": 10104,
+        "text": "Utilized MUI (Material-UI) and Kendo React components to design and implement beautiful and user-friendly interfaces"
+      },
+      {
+        "id": 10105,
+        "text": "Collaborated with backend developers to structure the correct data responses from the APIs ensuring smoothfrontend-backend integration."
       }
     ]
   }
